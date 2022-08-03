@@ -18,7 +18,7 @@ import {useEffect, useState} from "react";
 // * If the search field is empty, show all books.
 // * Clicking the up arrow should change the book order to show the oldest books first.
 // * Clicking the down arrow should change the book order to show the newest books first.
-const BOOK_URL = 'http://localhost:3000/books.json';
+const BOOK_URL = '/books.json';
 
 const Book = ({title, author, publicationYear}) => {
     return (
@@ -87,7 +87,7 @@ const Library = () => {
         setLoading(true);
 
         let newData = [];
-        
+
         setTimeout(() => {
 
             newData = allBooks.sort((a,b) => {

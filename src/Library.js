@@ -87,6 +87,7 @@ const Library = () => {
         setLoading(true);
 
         let newData = [];
+        
         setTimeout(() => {
 
             newData = allBooks.sort((a,b) => {
